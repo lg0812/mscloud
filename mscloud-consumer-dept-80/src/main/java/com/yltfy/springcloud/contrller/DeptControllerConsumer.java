@@ -1,17 +1,17 @@
 package com.yltfy.springcloud.contrller;
 
-import java.util.List;
-
+import com.yltfy.springcloud.entities.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-import com.yltfy.springcloud.entities.Dept;
+
+import java.util.List;
 
 @RestController
 public class DeptControllerConsumer {
-//    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    //    private static final String REST_URL_PREFIX = "http://localhost:8001";
     private static final String REST_URL_PREFIX = "http://mscloud-dept";
     @Autowired
     private RestTemplate restTemplate;
