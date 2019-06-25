@@ -15,6 +15,7 @@
         <module>mscloud-eureka-7003</module>
         <module>mscloud-provider-dept-8002</module>
         <module>mscloud-provider-dept-8003</module>
+        <module>mscloud-consumer-dept-feign</module>
     </modules>
 
     <packaging>pom</packaging>
