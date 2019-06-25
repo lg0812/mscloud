@@ -37,3 +37,14 @@ eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
       defaultZone: http://localhost:7001/eureka
+  instance:
+    # 修改主机名
+    instance-id: mscloud-dept-8001
+    # 左下角显示ip地址
+    prefer-ip-address: true
+
+info:
+  app.name: yltfy-mscloud
+  company.name: www.yltfy.cn
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
