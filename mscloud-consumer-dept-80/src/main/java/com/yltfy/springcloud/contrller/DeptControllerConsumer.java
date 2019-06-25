@@ -11,7 +11,8 @@ import com.yltfy.springcloud.entities.Dept;
 
 @RestController
 public class DeptControllerConsumer {
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+//    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    private static final String REST_URL_PREFIX = "http://mscloud-dept";
     @Autowired
     private RestTemplate restTemplate;
 
