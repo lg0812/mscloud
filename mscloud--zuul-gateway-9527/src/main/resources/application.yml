@@ -1,0 +1,28 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: mscloud-zuul-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true
+
+
+info:
+  app.name: yltfy-mscloud
+  company.name: www.yltfy.cn
+  build.artifactId: @project.artifactId@
+  build.version: @project.version@
+
+zuul:
+  routes:
+    ms.serviceId: ms-dept
+    ms.path: ms/**
+  ignored-services: mscloud-dept
+  prefix: /yltfy
